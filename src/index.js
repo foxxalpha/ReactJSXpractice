@@ -1,35 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const customStyle = {
-  color: "black"
-};
-
-const customStyleM = {
-  color: "red"
-};
-const customStyleA = {
-  color: "green"
-};
-const customStyleN = {
-  color: "blue"
-};
-
-const whatTime = new Date().getHours();
+const whatTime = new Date();
 
 console.log(whatTime);
 
-if (whatTime > 12 && whatTime < 18) {
-  customStyle = customStyleA;
-} else if (whatTime > 18 && whatTime < 23) {
-  customStyle = customStyleN;
-} else if (whatTime > 01 && whatTime < 12) {
-  customStyle = customStyleM;
-}
-
 ReactDOM.render(
-  <h1 className="heading" style={customStyle}>
-    Good Morning
+  <h1 className="heading" style={}>
+    Good Afternoon
   </h1>,
   document.getElementById("root")
 );
